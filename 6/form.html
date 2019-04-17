@@ -1,0 +1,48 @@
+<!doctype html> <!-- form.html -->
+
+<html><head><meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
+
+<title>폼 과제</title>
+
+<script>
+
+function brand(obj) {
+var name_a = ["강아지풀", "패랭이꽃", "갈퀴나물", "울릉국화", "개느삼", "연잎꿩의다리", "개가시나무", "황기"];
+
+var name_b = ["라밴더", "패퍼민트", "로즈마리", "캐모마일", "재스민", "시계초", "보리지", "클라리세이지", "아니카", "스파티움"];
+
+var name_c = ["소나무", "메타세콰이아", "푸른구상", "전나무", "개잎갈나무", "눈측백", "잎갈나무", "분비나무", "개비자나무",  "떡갈나무", "대나무"];
+
+var name_d = ["해바라기", "바람꽃", "장미", "백일홍", "나팔꽃",  "복수초", "메리골드", "금잔화", "무궁화", "데이지"];
+
+var target = document.getElementById("namex");
+ if(obj.value == "a") var k = name_a;
+else if(obj.value == "b") var k = name_b;
+else if(obj.value == "c") var k = name_c;
+else if(obj.value == "d") var k = name_d;
+ 
+  target.options.length = 0;
+
+  for (x in k) {
+    var opt = document.createElement("option");
+    opt.value = k[x];
+    opt.innerHTML = k[x];
+    target.appendChild(opt);
+    }
+    }
+    </script>
+
+</head>
+<body>
+<section>
+<fieldset>
+<legend>식물의 종류</legend>
+<label for="brandx">종류선택</label>
+<select id="brandx" name="icecreambrand" onchange ="brand(this)">
+<option value="a"selected>야생화</option>
+<option value="b">허브</option>
+<option value="c">나무</option>
+<option value="d">꽃</option></select>
+<label for="name">NAME</label>
+<select id="namex" name="name"></select>
+</fieldset></section></body></html>
