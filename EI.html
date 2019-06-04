@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- rwd4.html  -->
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<style> * {box-sizing:border-box; padding:0;  margin:0;}
+.row::after {content:""; clear:both; display:table;}
+[class*="col-"] {float:left; padding:10px;}
+.header, .footer {background-color:lightgray; color:blue; padding:10px;}
+.menu ul, .banner ul {list-style-type:none;}
+.menu li {background-color:pink; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+.menu li:hover {background-color:red;}
+.banner li {border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+.banner li img {width:30%; vertical-align:middle;}
+[class*="col-"] {width:100%;}
+@media only screen and (min-width:600px) {   
+.col-m-1 {width:8.33%;}
+.col-m-2 {width:16.66%;}
+.col-m-3 {width:25%;}
+.col-m-4 {width:33.33%;}
+.col-m-5 {width:41.66%;}
+.col-m-6 {width:50%;}
+.col-m-7 {width:58.33%;}
+.col-m-8 {width:66.66%;}
+.col-m-9 {width:75%;}
+.col-m-10 {width:83.33%;}
+.col-m-11 {width:91.66%;}
+.col-m-12 {width:100%;}}
+@media only screen and (min-width:768px) {  
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.66%;}
+.col-12 {width:100%;}}
+</style>
+<title>포트폴리오</title>
+</head>
+<body>
+<header class="header">
+<h2>포트폴리오</h2>
+</header>
+<div class="row"></div>
+<div id="main">
+  <nav class="col-3 col-m-3 menu">  <!-- 메뉴  D:25%  T:25% M:100% -->
+  <ul><li>메인<a href="taekheonkim.github.io/A.html" target="_blank"></a></li><li>학력 및 경력</li><li>수강내역</li><li>과목별 프로잭트들</li><li>공모전</li></ul></nav>
+  <section class="col-6 col-m-9"> <!-- setion D:50%  T:75% M:100% -->
+    <h3>김택헌의 포트폴리오</h3>
+    <p><자기소개 페이지 입니다.></p>
+    <picture>
+     2016년 대전대학교 컴퓨터공학과 입학.
+     현재 C언어와 html을 비롯한 여러 프로그래밍 언어를 배우고 있습니다.
+    </picture>
+  </section>
+  <aside class="col-3 col-m-12 banner">
+
+
+  </aside>
+</div><div class="row"></div>
+<footer class="footer">
+<h4>Copyright 20XX Korea.</h4>
+</footer>
+</body></html>
